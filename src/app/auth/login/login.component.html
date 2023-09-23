@@ -1,3 +1,38 @@
-<div class="">
-  <!-- <img class="w-full fixed top-0 left-0 h-full" src="/src/assets/images/png/background-articuno.png" alt="articuno background image"> -->
+<div class="bg-[#74B4E0] w-screen h-screen">
+  <img class="h-full fixed top-0 right-0 scale-[110%] translate-x-[-5%]" src="assets/images/png/background-articuno.png" alt="articuno background image">
+  <div class="z-10 h-full flex items-center">
+    <div class="px-[clamp(2.5rem,5%,5rem)] py-24 rounded-[12px] bg-[#4474AB] bg-opacity-80 z-10 m-auto md:ml-[50px] flex flex-col justify-center shadow-[4px_4px_4px_rgba(0,0,0,0.25)] ">
+      <div class="text-center space-y-5">
+        <!-- title -->
+        <h1 class="text-5xl text-[#E3F0F9]" style="font-family: 'Changa One';">
+          Another PokeAPI
+        </h1>
+        <!-- author info -->
+        <div class="w-full text-white flex flex-col items-center justify-center">
+          <p>Por: <span class="text-[#B4F4FF] font-bold">Reinhard Conde</span></p>
+          <em><p>Desarrollador web</p></em>
+        </div>
+        <!-- image interactive -->
+        <div class="flex justify-center w-full">
+          <div class="pokeball relative">
+            <img src="assets/images/png/pokeball.png" alt="pokeball" class="w-[127px] drop-shadow-[-10px_5px_10px_rgba(0,0,0,0.25)]">
+          </div>
+        </div>
+      </div>
+      <div class="w-full text-white">
+        <!-- login form -->
+        <form class="[&>div>label]:text-[20px] [&>div>label]:font-light space-y-10">
+          <div class="flex flex-col">
+            <label for="username">Username:</label>
+            <input id="username" type="text">
+          </div>
+          <div class="flex flex-col">
+            <label for="pwd">Password:</label>
+            <input id="pwd" type="password">
+          </div>
+          <button class="w-full py-2 text-2xl bg-[#19A2AB] rounded-[0.4rem] font-bold !mt-20">Log In</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
