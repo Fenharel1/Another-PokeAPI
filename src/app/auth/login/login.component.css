@@ -11,6 +11,14 @@ input:focus{
   outline: 4px solid #10A2AB;
 }
 
+.pokeball{
+  transform-origin: 50% 100%;
+  animation-name: balance;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
 .pokeball:after{
   content: '';
   display: block;
@@ -25,12 +33,32 @@ input:focus{
   right: 39px;
   opacity:0.8;
   animation-name: parpadeo;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
 @keyframes parpadeo {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes balance {
+  0% { transform: rotateZ(0deg)}
+  20% { transform: rotateZ(15deg)}
+  40% { transform: rotateZ(-15deg)}
+  60% { transform: rotateZ(15deg)}
+  80% { transform: rotateZ(-15deg)}
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+
+.error-hint{
+  @apply text-[#EFFF8C]
+           text-sm
+           absolute
+           top-[4.5rem]
+           mt-1;
 }

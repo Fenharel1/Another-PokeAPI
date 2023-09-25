@@ -1,0 +1,26 @@
+/* .pages-list > li > a{ */
+.page-list-item{
+  @apply bg-[#C49293]
+           border-[#D65758]
+           border
+           px-2
+           text-[transparent]
+           rounded-[12px];
+}
+
+.page-link-item{
+  @apply text-white
+          !bg-transparent;
+}
+
+.active{
+  background-color: #D65758 !important;
+}
+/*
+.page-list-item{
+  transition-duration: 0.5s;
+}
+
+.page-list-item:hover {
+  background:transparent !important;
+} */
